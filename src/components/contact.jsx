@@ -32,21 +32,17 @@ const Contact = () => {
     { name: "Salem Office", contact: "9994109104" },
   ];
 
-  // Handle city selection
   const handleCityChange = (event) => {
     const city = event.target.value;
     setSelectedCity(city);
 
-    // Find the contact number based on the selected city
     const cityData = cities.find((c) => c.name === city);
     setContactNumber(cityData ? cityData.contact : "");
   };
 
   return (
     <div className="relative w-full max-w-4xl p-6 mt-8 bg-transparent rounded-lg shadow-lg backdrop-blur-sm md:p-12">
-      {/* Grid Layout for Dropdown and Contact Display */}
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        {/* Left Side: City Dropdown */}
         <div className="flex flex-col justify-center">
           <label className="mb-2 text-center text-gray-700 md:text-left">
             Select your city to contact a local representative:
@@ -65,7 +61,6 @@ const Contact = () => {
           </select>
         </div>
 
-        {/* Right Side: Contact Number Display */}
         <div className="flex flex-col items-center justify-center p-4 rounded-md shadow-xl bg-white/80 backdrop-blur-3xl">
           {selectedCity && (
             <p className="mb-2 text-lg font-bold text-red-600">
@@ -78,7 +73,6 @@ const Contact = () => {
                 Contact Number:{" "}
                 <span className="font-bold">{contactNumber}</span>
               </p>
-              {/* Save Contact Button */}
               <a
                 href={`tel:${contactNumber}`}
                 className="flex items-center px-6 py-2 mt-4 text-white transition duration-300 ease-in-out bg-red-500 rounded-lg shadow-lg hover:bg-red-600"
@@ -94,11 +88,9 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Social Media Section */}
       <div className="mt-8 text-center">
         <h3 className="mb-4 text-gray-700">Connect with us on:</h3>
         <div className="flex justify-center space-x-4">
-          {/* Email */}
           <a
             href="mailto:info@ananthtextiles.com"
             className="text-2xl text-red-600 transition-transform duration-300 transform hover:scale-125"
@@ -106,7 +98,6 @@ const Contact = () => {
             <FaEnvelope />
           </a>
 
-          {/* Instagram */}
           <a
             href="https://www.instagram.com/ananthtextiles"
             className="text-2xl text-red-600 transition-transform duration-300 transform hover:scale-125"
@@ -116,7 +107,6 @@ const Contact = () => {
             <FaInstagram />
           </a>
 
-          {/* Facebook */}
           <a
             href="https://www.facebook.com/Ananthtextiles"
             className="text-2xl text-red-600 transition-transform duration-300 transform hover:scale-125"
@@ -126,7 +116,6 @@ const Contact = () => {
             <FaFacebookF />
           </a>
 
-          {/* Twitter (X) */}
           <a
             href="https://x.com/ananthtextiles?mx=2"
             className="text-2xl text-red-600 transition-transform duration-300 transform hover:scale-125"
@@ -136,7 +125,6 @@ const Contact = () => {
             <FaTwitter />
           </a>
 
-          {/* WhatsApp */}
           <a
             href="https://wa.me/919842234567"
             className="text-2xl text-red-600 transition-transform duration-300 transform hover:scale-125"
@@ -146,7 +134,6 @@ const Contact = () => {
             <FaWhatsapp />
           </a>
 
-          {/* Website */}
           <a
             href="https://ananthtextiles.com"
             className="text-2xl text-red-600 transition-transform duration-300 transform hover:scale-125"

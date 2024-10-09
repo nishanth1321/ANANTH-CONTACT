@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import star from "../assets/star.png";
 
@@ -8,19 +7,19 @@ const YearsOfExcellence = () => {
   useEffect(() => {
     let startCount = 0;
     const endCount = 36;
-    const duration = 2000; // 2 seconds duration for the animation
-    const increment = (endCount / duration) * 50; // Increment for each interval
+    const duration = 2000;
+    const increment = (endCount / duration) * 50;
 
     const countInterval = setInterval(() => {
       startCount += increment;
       if (startCount >= endCount) {
         startCount = endCount;
-        clearInterval(countInterval); // Stop interval when reaching 36
+        clearInterval(countInterval);
       }
-      setCount(Math.floor(startCount)); // Update state with the new value
-    }, 50); // Run the interval every 50ms
+      setCount(Math.floor(startCount));
+    }, 50);
 
-    return () => clearInterval(countInterval); // Cleanup function
+    return () => clearInterval(countInterval);
   }, []);
 
   return (
@@ -32,7 +31,7 @@ const YearsOfExcellence = () => {
         <img
           src={star}
           alt="Ananth Textiles Logo"
-          className="w-16 h-16 md:w-24 md:h-24" // Adjust the size of the logo as needed
+          className="w-16 h-16 md:w-24 md:h-24"
         />
       </div>
       <p className="-mt-2 text-2xl font-bold text-center text-red-600">
