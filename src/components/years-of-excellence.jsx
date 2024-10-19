@@ -43,7 +43,7 @@
 
 // export default YearsOfExcellence;
 import React, { useEffect, useState } from "react";
-import star from "../assets/star.png";
+import star from "../assets/star.jpg";
 
 const YearsOfExcellence = () => {
   const [count, setCount] = useState(0);
@@ -75,7 +75,7 @@ const YearsOfExcellence = () => {
         <img
           src={star}
           alt="Ananth Textiles Logo"
-          className="w-16 h-16 md:w-24 md:h-24"
+          className="w-24"
         />
       </div>
       <p className="-mt-2 text-2xl font-bold text-center text-red-600">
