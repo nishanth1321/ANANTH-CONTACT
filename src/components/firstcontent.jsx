@@ -16,24 +16,24 @@ const MainContent = () => {
           </div>
 
           <div className="flex justify-center mb-4 lg:hidden">
-            <img src={logo} alt="Ananth Textiles Logo" className="h-12 w-36" />
+            <img src={logo} alt="Ananth Textiles Logo" className="h-16 w-46" />
           </div>
           <h1 className="hidden mt-8 mb-4 text-3xl font-extrabold text-center text-red-600 md:block">
-            ANANTH TEXTILES AGENCY
+            ANANTH TEXTILES Agencies
           </h1>
 
           <div className="p-4 mb-10 text-white bg-red-500 rounded-lg shadow-xl shadow-red-300">
-            <p className="text-lg font-semibold text-center md:text-left">
-              Premium sarees directly sourced from the finest Tamil Nadu
-              manufacturers.
+            <p className="text-lg font-semibold text-center md:text-center">
+              South india's Leading Textile marketing Agencies.
             </p>
           </div>
 
-          <p className="text-lg text-center text-gray-700 md:text-left">
-            At Ananth Textiles, we take pride in our deep-rooted tradition of
+          <p className="text-lg text-justify text-gray-700 md:text-left">
+            At Ananth Textiles Agencies, we take pride in our deep-rooted tradition of
             sourcing and providing high-quality sarees. Our collection reflects
-            the rich heritage of Tamil Nadu.
+            the rich heritage of
           </p>
+          <p className="pt-3 text-lg font-bold text-center text-red-600"> Tamil Nadu, Kerala, Karnataka, Andhra</p>
         </div>
 
         <div className="flex items-center justify-center">
